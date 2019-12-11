@@ -1,3 +1,4 @@
+install.packages("here")
 library(here)
 
 #Get currently installed packages
@@ -12,9 +13,6 @@ save(package_list, package_df, file = here("r", "ipl.rda"))
 
 # Loads list of remotely installed packages
 load(file = here("r", "ipl.rda"))
-
-# Re-install packages
-install.packages(package_list)
 
 #Packages Installed from Github
 
