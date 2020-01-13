@@ -1,0 +1,51 @@
+---
+title: "Package Install"
+output: html_notebook
+---
+If this is your first time installing packages into your profile you will want to selectively run this code. Run Code Chunks 1, 5, 6, & 7 
+
+```{r Code Chunk 1}
+install.packages("here")
+library(here)
+```
+
+Gets currently installed packages
+
+```{r Code Chunk 2}
+package_df <- as.data.frame(installed.packages())
+package_list <- as.character(package_df$Package)
+```
+
+Print Package List
+```{r Code Chunk 3}
+package_list
+```
+
+
+Saves list of installed packages
+```{r Code Chunk 4}
+save(package_list, package_df, file = here("r", "ipl.rda"))
+```
+
+Loads list of remotely installed packages
+```{r Code Chunk 5}
+load(file = here("r", "ipl.rda"))
+```
+
+Installation of Packages from Save R Data File
+
+```{r Code Chunk 6}
+install.packages(package_list)
+```
+
+
+Packages Installed from Github
+```{r Code Chunk 7}
+devtools::install_github("chris-prener/stlData")
+devtools::install_github("chris-prener/testDriveR")
+devtools::install_github("slu-openGIS/gateway")
+devtools::install_github("rstudio/blogdown")
+devtools::install_github("tidyverse/ggplot2")
+```
+
+
