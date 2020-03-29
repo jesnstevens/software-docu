@@ -1,36 +1,17 @@
-install.packages("tidyverse")
-install.packages("githubinstall")
-install.packages("ineq")
-install.packages("sf")
-install.packages("stargazer")
-install.packages("acepack")
-install.packages("bitops")
-install.packages("corrplot")
-install.packages("RColorBrewer")
-install.packages("sp")
-install.packages("tidycensus")
-install.packages("car") 
-install.packages("caTools")
-install.packages("checkmate")
-install.packages("clipr")
-install.packages("downloader")
-install.packages("effsize")
-install.packages("formatR")
-install.packages("gapminder")
-install.packages("gdata")
-install.packages("ggridges")
-install.packages("gmodels")
-install.packages("gridExtra")
-install.packages("here")
-install.packages("htmlwidgets")
-install.packages("latticeExtra")
-install.packages("mice")
-install.packages("pscl")
-install.packages("pwr")
-install.packages("Rcurl")
-install.packages("RDSTK")
-install.packages("reshape" )
-install.packages("devtools")
-install.packages("rgeos")
-install.packages("rjson")
-install.packages("weights")
+install.packages(c("acepack", "bitops", "car", "caTools", "ceramic", "checkmate", "clipr", "cowsay", 
+                   "corrplot", "devtools", "downloader", "effsize", "formatR", 
+                   "gapminder", "gdata", "ggridges", "ggstatsplot", 
+                   "ggthemes", "gmodels", "gridExtra", "heplots", "here", "Hmisc", "htmlwidgets",
+                   "ineq", "janitor", "kableExtra", "knitr", "latticeExtra", 
+                   "leaflet", "lmtest", "mapview", 
+                   "mice", "moments", "naniar", "nortest", "pscl", "psych", 
+                   "pwr", "reprex", "rmarkdown",
+                   "sandwich", "sp", "skimr","stargazer", "tidyverse", 
+                   "radix", "RColorBrewer", "RCurl", "RDSTK", "reshape", "rgeos", "rjson", 
+                   "testDriveR", "tidycensus", "tigris", "tmap", "viridis", "webshot", "weights"))
+
+remotes::install_github(c("mtennekes/oldtmaptools", "slu-openGIS/censusxy", 
+                          "slu-openGIS/areal", "slu-openGIS/eads", "slu-openGIS/biscale",
+                          "slu-openGIS/stlcsb", "slu-openGIS/tidyseg", "slu-openGIS/qualmap",
+                          "slu-openGIS/cityHealth", "r-spatial/sf"))
+
